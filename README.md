@@ -48,7 +48,7 @@ For more information about how to use this software have a look at their Wiki [h
 
 ```
 docker create \
-  --name=linuxserver/habridge \
+  --name=habridge \
   --net=bridge \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
