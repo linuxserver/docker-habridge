@@ -1,9 +1,9 @@
 [linuxserverurl]: https://linuxserver.io
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
-[appurl]: www.example.com
-[dockerfileurl]: https://github.com/linuxserver/docker-<container-name>/blob/master/Dockerfile
-[hub]: https://hub.docker.com/r/<image-name>/
+[appurl]: http://bwssystems.com/#/habridge
+[dockerfileurl]: https://github.com/linuxserver/docker-habridge/blob/master/Dockerfile
+[hub]: https://hub.docker.com/r/linuxserver/habridge/
 
 
 
@@ -29,25 +29,33 @@ The [LinuxServer.io][linuxserverurl] team brings you another image release featu
  + weekly base OS updates with common layers across the entire LinuxServer.io ecosystem to minimise space usage, down time and bandwidth
  + security updates
 
-# <image-name>
+# linuxserver/habridge
 
 [![Dockerfile-link](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Dockerfile-Link-green.png)][dockerfileurl]
 
-Provide a short, concise description of the application. No more than two SHORT paragraphs. Link to sources where possible and include an image illustrating your point if necessary. Point users to the original applications website, as that's the best place to get support - not here.
+[ha-bridge][appurl] emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as "On", "Off" and "brightness" commands of the hue protocol. This bridge can control most devices that have a distinct API.
 
-`IMPORTANT, replace all instances of <image-name> with the correct dockerhub repo (ie linuxserver/plex) and <container-name> information (ie, plex) and make sure to update the block at the top of this file containing app specific urls, dockerhub url and dockerfile url etc.`
+In the cases of systems that require authorization and/or have APIs that cannot be handled in the current method, a module may need to be built. The Harmony Hub is such a module and so is the Nest module. The Bridge has helpers to build devices for the gateway for the Logitech Harmony Hub, Vera, Vera Lite or Vera Edge, Nest, Somfy Tahoma, Home Assistant, Domoticz, MQTT, HAL, Fibaro, HomeWizard, LIFX, OpenHAB, FHEM, Broadlink and the ability to proxy all of your real Hue bridges behind this bridge.
 
+This bridge was built to help put the Internet of Things together.
+
+For more information about how to use this software have a look at their Wiki [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
+
+[![ha-bridge](https://raw.githubusercontent.com/bwssytems/ha-bridge/master/src/main/resources/public/img/favicon.ico)][appurl]
 &nbsp;
 
 ## Usage
 
 ```
 docker create \
-  --name=<container-name> \
+  --name=linuxserver/habridge \
+  --net=bridge \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
-  -p 1234:1234 \
-  <image-name>
+  -e SEC_KEY=<Your Key To Encrypt Security Data>
+  -p 8080:8080 \
+  -p 50000:50000 \
+  linuxserver/habridge
 ```
 
 &nbsp;
@@ -87,7 +95,9 @@ In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as bel
 
 ## Setting up the application
 
-Insert a basic user guide here to get a n00b up and running with the software inside the container. DELETE ME
+To set up the ha-bridge simply go to http://<IP of your docker host>:<port you mapped to 8080>. Once you are in the webui you can add devices and configure ha-bridge to your liking.
+
+For information on how to configure ha-bridge, go to their wiki at [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
 
 
 &nbsp;
@@ -108,4 +118,4 @@ Insert a basic user guide here to get a n00b up and running with the software in
 
 |  Date | Changes |
 | :---: | --- |
-| dd.MM.yy |  Initial Release. |
+| 08.04.18 |  Initial Release. |
