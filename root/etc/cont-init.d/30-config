@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+		/config/scripts \
+
+# copy config file
+[[ ! -e /config/ha-bridge.config ]] && \
+		(cp /defaults/ha-bridge.config /config/ha-bridge.config)
+
+# set permissions
+chown -R abc:abc \
+	/config 

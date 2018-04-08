@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+exec \
+	s6-setuidgid abc java \
+			-jar \
+			-Dconfig.file=/config/ha-bridge.config \
+			-Dexec.garden=/config/scripts \
+			-Dsecurity.key="$SEC_KEY" \
+			/app/ha-bridge.jar 2>&1
