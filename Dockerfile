@@ -14,7 +14,8 @@ RUN \
 	jq && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-	openjdk8 && \
+	libcap \
+	openjdk8-jre && \
  echo "**** install ha-bridge ****" && \
  mkdir -p \
 		/app && \
@@ -24,7 +25,12 @@ RUN \
  /app/ha-bridge.jar -L \
 		${habridge_url} && \
  chown -R abc:abc \
-	app/ha-bridge.jar
+	app/ha-bridge.jar && \
+ echo "**** workaround to run habridge on port 80 as abc user ****" && \
+ setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/bin/java && \
+ setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/jre/bin/java && \
+ ln -s /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/jli/libjli.so /usr/lib/libjli.so && \
+ ln -s /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
 
 # copy local files
 COPY root/ /
