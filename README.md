@@ -118,4 +118,5 @@ For information on how to configure ha-bridge, go to their wiki at [https://gith
 
 |  Date | Changes |
 | :---: | --- |
+| 12.04.18 |  Add workaround to bind to port 80 if needed. |
 | 08.04.18 |  Initial Release. |
