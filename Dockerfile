@@ -27,8 +27,11 @@ RUN \
  echo "**** workaround to run habridge on port 80 as abc user ****" && \
  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/bin/java && \
  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/jre/bin/java && \
- ln -s /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/jli/libjli.so /usr/lib/libjli.so && \
- ln -s /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
+ echo "**** make architecture agnostic symlinks of java libs ****" && \
+ find \
+	/usr/lib/jvm/java-1.8-openjdk/jre \
+	-type f \( -name "libjvm.so" -o -name "libjli.so" \) \
+	-exec ln -sf {} /usr/lib/ \;
 
 # copy local files
 COPY root/ /
