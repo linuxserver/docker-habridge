@@ -11,7 +11,7 @@ RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	curl \
-	jq && \
+	jq \
 	libcap \
 	openjdk8-jre && \
  echo "**** install ha-bridge ****" && \
