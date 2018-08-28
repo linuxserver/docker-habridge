@@ -8,12 +8,10 @@ LABEL maintainer="saarg"
 
 # install packages
 RUN \
- echo "**** install build packages ****" && \
- apk add --no-cache --virtual=build-dependencies \
-	curl \
-	jq && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
+	curl \
+	jq && \
 	libcap \
 	openjdk8-jre && \
  echo "**** install ha-bridge ****" && \
