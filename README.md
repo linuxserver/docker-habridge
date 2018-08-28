@@ -118,5 +118,6 @@ For information on how to configure ha-bridge, go to their wiki at [https://gith
 
 |  Date | Changes |
 | :---: | --- |
+| 28.08.18 |  Rebase to alpine 3.8. |
 | 12.04.18 |  Add workaround to bind to port 80 if needed. |
 | 08.04.18 |  Initial Release. |

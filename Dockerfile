@@ -1,10 +1,10 @@
-FROM lsiobase/alpine:3.7
+FROM lsiobase/alpine:3.8
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="<tobbenb>"
+LABEL maintainer="saarg"
 
 # install packages
 RUN \
@@ -18,14 +18,12 @@ RUN \
 	openjdk8-jre && \
  echo "**** install ha-bridge ****" && \
  mkdir -p \
-		/app && \
+	/app && \
  habridge_url=$(curl -s https://api.github.com/repos/bwssytems/ha-bridge/releases/latest \
-		|jq -r '.assets[].browser_download_url') && \
+	| jq -r '.assets[].browser_download_url') && \
  curl -o \
  /app/ha-bridge.jar -L \
-		${habridge_url} && \
- chown -R abc:abc \
-	app/ha-bridge.jar && \
+	"$habridge_url" && \
  echo "**** workaround to run habridge on port 80 as abc user ****" && \
  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/bin/java && \
  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/jre/bin/java && \
