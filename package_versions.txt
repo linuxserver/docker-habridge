@@ -2,8 +2,8 @@ musl musl-1.1.20-r3
 busybox busybox-1.29.3-r10
 alpine-baselayout alpine-baselayout-3.1.0-r3
 alpine-keys alpine-keys-2.1-r1
-libcrypto1.1 libcrypto1.1-1.1.1a-r1
-libssl1.1 libssl1.1-1.1.1a-r1
+libcrypto1.1 libcrypto1.1-1.1.1b-r1
+libssl1.1 libssl1.1-1.1.1b-r1
 ca-certificates-cacert ca-certificates-cacert-20190108-r0
 libtls-standalone libtls-standalone-2.7.4-r6
 ssl_client ssl_client-1.29.3-r10
@@ -56,7 +56,7 @@ libgcc libgcc-8.2.0-r2
 giflib giflib-5.1.4-r2
 libjpeg-turbo libjpeg-turbo-1.5.3-r4
 libstdc++ libstdc++-8.2.0-r2
-openjdk8-jre-lib openjdk8-jre-lib-8.191.12-r0
+openjdk8-jre-lib openjdk8-jre-lib-8.201.08-r0
 java-common java-common-0.1-r0
 krb5-conf krb5-conf-1.0-r1
 libcom_err libcom_err-1.44.5-r0
@@ -64,10 +64,7 @@ keyutils-libs keyutils-libs-1.6-r0
 libverto libverto-0.3.0-r1
 krb5-libs krb5-libs-1.15.5-r0
 lcms2 lcms2-2.9-r1
-nspr nspr-4.20-r0
-sqlite-libs sqlite-libs-3.26.0-r3
-nss nss-3.41-r0
 pcsc-lite-libs pcsc-lite-libs-1.8.24-r1
 lksctp-tools lksctp-tools-1.0.17-r0
-openjdk8-jre-base openjdk8-jre-base-8.191.12-r0
-openjdk8-jre openjdk8-jre-8.191.12-r0
+openjdk8-jre-base openjdk8-jre-base-8.201.08-r0
+openjdk8-jre openjdk8-jre-8.201.08-r0
