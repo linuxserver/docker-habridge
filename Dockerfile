@@ -14,7 +14,9 @@ RUN \
 	curl \
 	jq \
 	libcap \
-	openjdk8-jre && \
+	nss \
+	openjdk8-jre \
+	sqlite-libs && \
  echo "**** install ha-bridge ****" && \
  if [ -z ${HABRIDGE_RELEASE+x} ]; then \
  	HABRIDGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
