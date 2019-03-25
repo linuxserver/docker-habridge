@@ -1,7 +1,4 @@
-FROM lsiobase/alpine.arm64:3.9
-
-# Add qemu to build on x86_64 systems
-COPY qemu-aarch64-static /usr/bin
+FROM lsiobase/alpine:arm64v8-3.9
 
 # set version label
 ARG BUILD_DATE
@@ -14,10 +11,12 @@ LABEL maintainer="saarg"
 RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-	curl \
-	jq \
-	libcap \
-	openjdk8-jre && \
+        curl \
+        jq \
+        libcap \
+        nss \
+        openjdk8-jre \
+        sqlite-libs && \
  echo "**** install ha-bridge ****" && \
  if [ -z ${HABRIDGE_RELEASE+x} ]; then \
  	HABRIDGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
