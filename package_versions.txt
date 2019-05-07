@@ -29,7 +29,7 @@ libcurl-7.64.0-r1
 libffi-3.2.1-r6
 libgcc-8.3.0-r0
 libjpeg-turbo-1.5.3-r4
-libpng-1.6.35-r0
+libpng-1.6.37-r0
 libssh2-1.8.2-r0
 libssl1.1-1.1.1b-r1
 libstdc++-8.3.0-r0
@@ -56,9 +56,9 @@ nghttp2-libs-1.35.1-r0
 nspr-4.20-r0
 nss-3.41-r0
 oniguruma-6.9.1-r0
-openjdk8-jre-8.201.08-r1
-openjdk8-jre-base-8.201.08-r1
-openjdk8-jre-lib-8.201.08-r1
+openjdk8-jre-8.212.04-r0
+openjdk8-jre-base-8.212.04-r0
+openjdk8-jre-lib-8.212.04-r0
 p11-kit-0.23.14-r0
 p11-kit-trust-0.23.14-r0
 pcsc-lite-libs-1.8.24-r1
