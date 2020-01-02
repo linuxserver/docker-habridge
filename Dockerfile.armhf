@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm32v7-3.11
+FROM lsiobase/alpine:arm32v7-3.10
 
 # set version label
 ARG BUILD_DATE
@@ -11,12 +11,12 @@ LABEL maintainer="saarg"
 RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-	curl \
-	jq \
-	libcap \
-	nss \
-	openjdk8-jre \
-	sqlite-libs && \
+        curl \
+        jq \
+        libcap \
+        nss \
+        openjdk8-jre \
+        sqlite-libs && \
  echo "**** install ha-bridge ****" && \
  if [ -z ${HABRIDGE_RELEASE+x} ]; then \
  	HABRIDGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
@@ -25,7 +25,7 @@ RUN \
  mkdir -p \
 	/app && \
  habridge_url=$(curl -s https://api.github.com/repos/bwssytems/ha-bridge/releases \
-	| jq -r 'first(.[] | select(.tag_name == '\"${HABRIDGE_RELEASE}\"')) | .assets[].browser_download_url' | grep -v java11) && \
+	| jq -r 'first(.[] | select(.tag_name == '\"${HABRIDGE_RELEASE}\"')) | .assets[].browser_download_url') && \
  curl -o \
  /app/ha-bridge.jar -L \
 	"$habridge_url" && \
