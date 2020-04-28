@@ -24,14 +24,14 @@ libbz2-1.0.8-r1
 libc-utils-0.7.2-r0
 libcap-2.27-r0
 libcom_err-1.45.5-r0
-libcrypto1.1-1.1.1d-r3
+libcrypto1.1-1.1.1g-r0
 libcurl-7.67.0-r0
 libffi-3.2.1-r6
 libgcc-9.2.0-r4
 libjpeg-turbo-2.0.4-r0
 liblksctp-1.0.18-r1
 libpng-1.6.37-r1
-libssl1.1-1.1.1d-r3
+libssl1.1-1.1.1g-r0
 libstdc++-9.2.0-r4
 libtasn1-4.15.0-r0
 libtls-standalone-2.9.1-r0
