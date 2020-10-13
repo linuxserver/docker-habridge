@@ -3,7 +3,7 @@ alpine-keys-2.2-r0
 alsa-lib-1.2.2-r0
 apk-tools-2.10.5-r1
 bash-5.0.17-r0
-brotli-libs-1.0.7-r5
+brotli-libs-1.0.9-r1
 busybox-1.31.1-r19
 ca-certificates-20191127-r4
 ca-certificates-bundle-20191127-r4
