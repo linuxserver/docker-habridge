@@ -8,7 +8,7 @@ busybox-1.31.1-r19
 ca-certificates-20191127-r4
 ca-certificates-bundle-20191127-r4
 coreutils-8.32-r0
-curl-7.69.1-r1
+curl-7.69.1-r3
 freetype-2.10.4-r0
 giflib-5.2.1-r0
 java-cacerts-1.0-r0
@@ -25,8 +25,8 @@ libbz2-1.0.8-r1
 libc-utils-0.7.2-r3
 libcap-2.27-r0
 libcom_err-1.45.6-r0
-libcrypto1.1-1.1.1g-r0
-libcurl-7.69.1-r1
+libcrypto1.1-1.1.1i-r0
+libcurl-7.69.1-r3
 libffi-3.3-r2
 libgcc-9.3.0-r2
 libintl-0.20.2-r0
@@ -34,7 +34,7 @@ libjpeg-turbo-2.0.5-r0
 liblksctp-1.0.18-r1
 libpng-1.6.37-r1
 libproc-3.3.16-r0
-libssl1.1-1.1.1g-r0
+libssl1.1-1.1.1i-r0
 libstdc++-9.3.0-r2
 libtasn1-4.16.0-r1
 libtls-standalone-2.9.1-r1
@@ -60,8 +60,8 @@ oniguruma-6.9.5-r2
 openjdk8-jre-8.252.09-r0
 openjdk8-jre-base-8.252.09-r0
 openjdk8-jre-lib-8.252.09-r0
-p11-kit-0.23.20-r5
-p11-kit-trust-0.23.20-r5
+p11-kit-0.23.22-r0
+p11-kit-trust-0.23.22-r0
 pcsc-lite-libs-1.8.26-r0
 procps-3.3.16-r0
 readline-8.0.4-r0
