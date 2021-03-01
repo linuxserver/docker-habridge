@@ -8,7 +8,7 @@ busybox-1.32.1-r3
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
 coreutils-8.32-r2
-curl-7.74.0-r0
+curl-7.74.0-r1
 encodings-1.0.5-r0
 expat-2.2.10-r1
 fontconfig-2.13.1-r3
@@ -28,8 +28,8 @@ libbz2-1.0.8-r1
 libc-utils-0.7.2-r3
 libcap-2.46-r0
 libcom_err-1.45.7-r0
-libcrypto1.1-1.1.1i-r0
-libcurl-7.74.0-r0
+libcrypto1.1-1.1.1j-r0
+libcurl-7.74.0-r1
 libffi-3.3-r2
 libfontenc-1.1.4-r0
 libgcc-10.2.1_pre1-r3
@@ -38,7 +38,7 @@ libjpeg-turbo-2.0.6-r0
 liblksctp-1.0.18-r1
 libpng-1.6.37-r1
 libproc-3.3.16-r0
-libssl1.1-1.1.1i-r0
+libssl1.1-1.1.1j-r0
 libstdc++-10.2.1_pre1-r3
 libtasn1-4.16.0-r1
 libtls-standalone-2.9.1-r1
