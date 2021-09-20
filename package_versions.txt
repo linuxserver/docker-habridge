@@ -8,7 +8,7 @@ busybox-1.32.1-r6
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
 coreutils-8.32-r2
-curl-7.78.0-r0
+curl-7.79.0-r0
 encodings-1.0.5-r0
 expat-2.2.10-r1
 fontconfig-2.13.1-r3
@@ -29,7 +29,7 @@ libc-utils-0.7.2-r3
 libcap-2.46-r0
 libcom_err-1.45.7-r0
 libcrypto1.1-1.1.1l-r0
-libcurl-7.78.0-r0
+libcurl-7.79.0-r0
 libffi-3.3-r2
 libfontenc-1.1.4-r0
 libgcc-10.2.1_pre1-r3
