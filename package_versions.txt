@@ -42,7 +42,7 @@ libssl1.1-1.1.1l-r0
 libstdc++-10.2.1_pre1-r3
 libtasn1-4.16.0-r1
 libtls-standalone-2.9.1-r1
-libuuid-2.36.1-r1
+libuuid-2.37.3-r0
 libverto-0.3.1-r1
 libx11-1.7.1-r0
 libxau-1.0.9-r0
