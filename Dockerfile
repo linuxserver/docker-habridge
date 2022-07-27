@@ -9,34 +9,32 @@ LABEL maintainer="saarg"
 
 # install packages
 RUN \
- echo "**** install runtime packages ****" && \
- apk add --no-cache \
-	curl \
-	jq \
-	libcap \
-	nss \
-	openjdk8-jre \
-	sqlite-libs && \
- echo "**** install ha-bridge ****" && \
- if [ -z ${HABRIDGE_RELEASE+x} ]; then \
- 	HABRIDGE_RELEASE=$(curl -sX GET "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
-        | awk '/tag_name/{print $4;exit}' FS='[""]'); \
- fi && \
- mkdir -p \
-	/app && \
- habridge_url=$(curl -s https://api.github.com/repos/bwssytems/ha-bridge/releases \
-	| jq -r 'first(.[] | select(.tag_name == '\"${HABRIDGE_RELEASE}\"')) | .assets[].browser_download_url' | grep -v java11) && \
- curl -o \
- /app/ha-bridge.jar -L \
-	"$habridge_url" && \
- echo "**** workaround to run habridge on port 80 as abc user ****" && \
- setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/bin/java && \
- setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/jre/bin/java && \
- echo "**** make architecture agnostic symlinks of java libs ****" && \
- find \
-	/usr/lib/jvm/java-1.8-openjdk/jre \
-	-type f \( -name "libjvm.so" -o -name "libjli.so" \) \
-	-exec ln -sf {} /usr/lib/ \;
+  echo "**** install runtime packages ****" && \
+  apk add --no-cache \
+    curl \
+    jq \
+    libcap \
+    nss \
+    openjdk8-jre \
+    sqlite-libs && \
+  echo "**** install ha-bridge ****" && \
+  if [ -z ${HABRIDGE_RELEASE+x} ]; then \
+    HABRIDGE_RELEASE=$(curl -sL "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
+    | jq -r '.tag_name'); \
+  fi && \
+  mkdir -p \
+    /app && \
+  curl -o \
+  /app/ha-bridge.jar -L \
+    "https://github.com/bwssytems/ha-bridge/releases/download/${HABRIDGE_RELEASE}/ha-bridge-${HABRIDGE_RELEASE:1}.jar" && \
+  echo "**** workaround to run habridge on port 80 as abc user ****" && \
+  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/bin/java && \
+  setcap cap_net_bind_service=+epi /usr/lib/jvm/java-1.8-openjdk/jre/bin/java && \
+  echo "**** make architecture agnostic symlinks of java libs ****" && \
+  find \
+    /usr/lib/jvm/java-1.8-openjdk/jre \
+    -type f \( -name "libjvm.so" -o -name "libjli.so" \) \
+    -exec ln -sf {} /usr/lib/ \;
 
 # copy local files
 COPY root/ /
