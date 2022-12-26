@@ -4,12 +4,12 @@ alpine-keys-2.4-r1
 alpine-release-3.17.0-r0
 alsa-lib-1.2.8-r0
 apk-tools-2.12.10-r1
-bash-5.2.12-r0
+bash-5.2.15-r0
 brotli-libs-1.0.9-r9
 busybox-1.35.0-r29
 busybox-binsh-1.35.0-r29
-ca-certificates-20220614-r2
-ca-certificates-bundle-20220614-r2
+ca-certificates-20220614-r3
+ca-certificates-bundle-20220614-r3
 coreutils-9.1-r0
 curl-7.86.0-r1
 encodings-1.0.6-r0
@@ -25,7 +25,7 @@ krb5-conf-1.0-r2
 krb5-libs-1.20.1-r0
 lcms2-2.14-r0
 libacl-2.3.1-r1
-libattr-2.5.1-r1
+libattr-2.5.1-r2
 libbsd-0.11.7-r0
 libbz2-1.0.8-r4
 libc-utils-0.7.2-r3
