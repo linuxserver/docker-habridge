@@ -11,7 +11,7 @@ busybox-binsh-1.35.0-r29
 ca-certificates-20220614-r4
 ca-certificates-bundle-20220614-r4
 coreutils-9.1-r0
-curl-7.87.0-r0
+curl-7.87.0-r1
 encodings-1.0.6-r0
 font-dejavu-2.37-r3
 fontconfig-2.14.1-r0
@@ -34,7 +34,7 @@ libcap-utils-2.66-r0
 libcap2-2.66-r0
 libcom_err-1.46.5-r4
 libcrypto3-3.0.7-r2
-libcurl-7.87.0-r0
+libcurl-7.87.0-r1
 libexpat-2.5.0-r0
 libffi-3.4.4-r0
 libfontenc-1.1.6-r0
