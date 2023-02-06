@@ -49,7 +49,7 @@ libssl3-3.0.7-r2
 libstdc++-12.2.1_git20220924-r4
 libtasn1-4.19.0-r0
 libverto-0.3.2-r1
-libx11-1.8.3-r1
+libx11-1.8.4-r0
 libxau-1.0.10-r0
 libxcb-1.15-r0
 libxcomposite-0.4.5-r1
