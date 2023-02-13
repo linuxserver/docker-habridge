@@ -66,7 +66,7 @@ ncurses-libs-6.3_p20221119-r0
 ncurses-terminfo-base-6.3_p20221119-r0
 nghttp2-libs-1.51.0-r0
 nspr-4.35-r0
-nss-3.85-r0
+nss-3.85-r1
 oniguruma-6.9.8-r0
 openjdk8-jre-8.345.01-r3
 openjdk8-jre-base-8.345.01-r3
