@@ -14,34 +14,29 @@ project_blurb: |
 
   For more information about how to use this software have a look at their Wiki [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
 project_blurb_optional_extras_enabled: false
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: false
-
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_net: false
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "SEC_KEY", env_value: "<Your Key To Encrypt Security Data>", desc: "Key used to secure communication." }
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
+  - {env_var: "SEC_KEY", env_value: "<Your Key To Encrypt Security Data>", desc: "Key used to secure communication."}
+  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Where HABridge stores config files and data." }
+  - {vol_path: "/config", vol_host_path: "<path to data>", desc: "Where HABridge stores config files and data."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "8080", internal_port: "8080", port_desc: "WebUI" }
-  - { external_port: "50000", internal_port: "50000", port_desc: "HABridge communication port." }
+  - {external_port: "8080", internal_port: "8080", port_desc: "WebUI"}
+  - {external_port: "50000", internal_port: "50000", port_desc: "HABridge communication port."}
 param_device_map: false
 cap_add_param: false
-
 # optional container parameters
 opt_param_usage_include_env: false
 opt_param_usage_include_vols: false
@@ -49,24 +44,23 @@ opt_param_usage_include_ports: false
 opt_param_device_map: false
 opt_cap_add_param: false
 optional_block_1: false
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   To set up the ha-bridge simply go to http://localhost:8080. Once you are in the webui you can add devices and configure ha-bridge to your liking.
 
   For information on how to configure ha-bridge, go to their wiki at [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
-
 # changelog
 changelogs:
-  - { date: "11.12.22:", desc: "Rebasing to alpine 3.17." }
-  - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
-  - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
-  - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
-  - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
-  - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
-  - { date: "22.02.19:", desc: "Rebasing to alpine 3.9." }
-  - { date: "11.02.19:", desc: "Add pipeline logic and multi arch." }
-  - { date: "28.08.18:", desc: "Rebase to alpine 3.8." }
-  - { date: "12.04.18:", desc: "Add workaround to bind to port 80 if needed." }
-  - { date: "08.04.18:", desc: "Initial Release." }
+  - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
+  - {date: "11.12.22:", desc: "Rebasing to alpine 3.17."}
+  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
+  - {date: "01.06.20:", desc: "Rebasing to alpine 3.12."}
+  - {date: "19.12.19:", desc: "Rebasing to alpine 3.11."}
+  - {date: "28.06.19:", desc: "Rebasing to alpine 3.10."}
+  - {date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag."}
+  - {date: "22.02.19:", desc: "Rebasing to alpine 3.9."}
+  - {date: "11.02.19:", desc: "Add pipeline logic and multi arch."}
+  - {date: "28.08.18:", desc: "Rebase to alpine 3.8."}
+  - {date: "12.04.18:", desc: "Add workaround to bind to port 80 if needed."}
+  - {date: "08.04.18:", desc: "Initial Release."}
