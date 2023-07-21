@@ -45,7 +45,7 @@ libcap                  2.66-r1                apk
 libcap-utils            2.66-r1                apk           
 libcap2                 2.66-r1                apk           
 libcom_err              1.46.6-r0              apk           
-libcrypto3              3.0.9-r1               apk           
+libcrypto3              3.0.9-r2               apk           
 libcurl                 8.1.2-r0               apk           
 libexpat                2.5.0-r0               apk           
 libffi                  3.4.4-r0               apk           
@@ -57,7 +57,7 @@ liblksctp               1.0.19-r1              apk
 libmd                   1.0.4-r0               apk           
 libpng                  1.6.38-r0              apk           
 libproc                 3.3.17-r2              apk           
-libssl3                 3.0.9-r1               apk           
+libssl3                 3.0.9-r2               apk           
 libstdc++               12.2.1_git20220924-r4  apk           
 libtasn1                4.19.0-r0              apk           
 libverto                0.3.2-r1               apk           
