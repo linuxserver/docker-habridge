@@ -16,7 +16,7 @@ ca-certificates-bundle  20230506-r0            apk
 charsets                                       java-archive  
 cldrdata                                       java-archive  
 coreutils               9.1-r0                 apk           
-curl                    8.2.0-r1               apk           
+curl                    8.2.1-r0               apk           
 dnsns                                          java-archive  
 encodings               1.0.6-r0               apk           
 font-dejavu             2.37-r3                apk           
@@ -46,7 +46,7 @@ libcap-utils            2.66-r1                apk
 libcap2                 2.66-r1                apk           
 libcom_err              1.46.6-r0              apk           
 libcrypto3              3.0.9-r3               apk           
-libcurl                 8.2.0-r1               apk           
+libcurl                 8.2.1-r0               apk           
 libexpat                2.5.0-r0               apk           
 libffi                  3.4.4-r0               apk           
 libfontenc              1.1.6-r0               apk           
