@@ -10,6 +10,6 @@ if [[ ! -e /config/ha-bridge.config ]]; then
 fi
 
 # set permissions
-chown -R abc:abc \
+lsiown -R abc:abc \
     /app \
     /config
