@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.17
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
 ARG BUILD_DATE
@@ -11,8 +11,6 @@ LABEL maintainer="saarg"
 RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    curl \
-    jq \
     libcap \
     nss \
     openjdk8-jre \
@@ -20,7 +18,7 @@ RUN \
   echo "**** install ha-bridge ****" && \
   if [ -z ${HABRIDGE_RELEASE+x} ]; then \
     HABRIDGE_RELEASE=$(curl -sL "https://api.github.com/repos/bwssytems/ha-bridge/releases/latest" \
-      | jq -r '.tag_name'); \
+    | jq -r '.tag_name'); \
   fi && \
   mkdir -p \
     /app && \

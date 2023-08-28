@@ -2,7 +2,7 @@
 
 # project information
 project_name: habridge
-project_url: "http://bwssystems.com/#/habridge"
+project_url: "https://bwssystems.com/#!/habridge"
 project_logo: "https://raw.githubusercontent.com/bwssytems/ha-bridge/master/src/main/resources/public/img/favicon.ico"
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb: |
@@ -52,6 +52,7 @@ app_setup_block: |
   For information on how to configure ha-bridge, go to their wiki at [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
 # changelog
 changelogs:
+  - {date: "25.08.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "11.12.22:", desc: "Rebasing to alpine 3.17."}
   - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
