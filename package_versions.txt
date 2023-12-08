@@ -3,7 +3,7 @@ US_export_policy                                java-archive
 alpine-baselayout       3.4.3-r1                apk           
 alpine-baselayout-data  3.4.3-r1                apk           
 alpine-keys             2.4-r1                  apk           
-alpine-release          3.18.4-r0               apk           
+alpine-release          3.18.5-r0               apk           
 alsa-lib                1.2.9-r1                apk           
 apk-tools               2.14.0-r2               apk           
 bash                    5.2.15-r5               apk           
@@ -15,7 +15,7 @@ ca-certificates-bundle  20230506-r0             apk
 charsets                                        java-archive  
 cldrdata                                        java-archive  
 coreutils               9.3-r1                  apk           
-curl                    8.4.0-r0                apk           
+curl                    8.5.0-r0                apk           
 dnsns                                           java-archive  
 encodings               1.0.7-r1                apk           
 font-dejavu             2.37-r5                 apk           
@@ -44,7 +44,7 @@ libcap-utils            2.69-r0                 apk
 libcap2                 2.69-r0                 apk           
 libcom_err              1.47.0-r2               apk           
 libcrypto3              3.1.4-r1                apk           
-libcurl                 8.4.0-r0                apk           
+libcurl                 8.5.0-r0                apk           
 libexpat                2.5.0-r1                apk           
 libffi                  3.4.4-r2                apk           
 libfontenc              1.1.7-r2                apk           
