@@ -28,7 +28,7 @@ java-cacerts            1.0-r1                  apk
 java-common             0.5-r0                  apk           
 jce                     1.8.0_392               java-archive  
 jfr                     1.8.0_392               java-archive  
-jq                      1.6-r3                  apk           
+jq                      1.6-r4                  apk           
 jsse                    1.8.0_392               java-archive  
 keyutils-libs           1.6.3-r3                apk           
 krb5-conf               1.0-r2                  apk           
