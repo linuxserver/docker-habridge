@@ -103,7 +103,7 @@ ssl_client              1.36.1-r5               apk
 sunec                   1.8.0_392               java-archive  
 sunjce_provider         1.8.0_392               java-archive  
 sunpkcs11               1.8.0_392               java-archive  
-tzdata                  2023d-r0                apk           
+tzdata                  2024a-r0                apk           
 utmps-libs              0.1.2.1-r1              apk           
 zipfs                   1.8.0_392               java-archive  
 zlib                    1.2.13-r1               apk           
