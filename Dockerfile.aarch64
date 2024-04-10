@@ -13,7 +13,7 @@ RUN \
   apk add --no-cache \
     libcap \
     nss \
-    openjdk17-jre \
+    openjdk8-jre \
     sqlite-libs && \
   echo "**** install ha-bridge ****" && \
   if [ -z ${HABRIDGE_RELEASE+x} ]; then \

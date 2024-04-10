@@ -43,6 +43,7 @@ app_setup_block: |
   For information on how to configure ha-bridge, go to their wiki at [https://github.com/bwssytems/ha-bridge/wiki](https://github.com/bwssytems/ha-bridge/wiki)
 # changelog
 changelogs:
+  - {date: "10.04.24:", desc: "Revert JRE to 8 due to incomplete upstream support."}
   - {date: "20.03.24:", desc: "Rebase to Alpine 3.19, bump JRE to 17."}
   - {date: "25.08.23:", desc: "Rebase to Alpine 3.18."}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
