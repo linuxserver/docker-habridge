@@ -11,5 +11,4 @@ fi
 
 # set permissions
 lsiown -R abc:abc \
-    /app \
     /config
