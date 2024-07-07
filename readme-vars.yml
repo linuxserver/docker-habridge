@@ -26,6 +26,8 @@ param_ports:
   - {external_port: "8080", internal_port: "8080", port_desc: "WebUI"}
   - {external_port: "50000", internal_port: "50000", port_desc: "HABridge communication port."}
 
+readonly_supported: true
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
