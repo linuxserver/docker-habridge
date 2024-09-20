@@ -20,7 +20,7 @@ coreutils               9.5-r1                 apk
 coreutils-env           9.5-r1                 apk                           
 coreutils-fmt           9.5-r1                 apk                           
 coreutils-sha512sum     9.5-r1                 apk                           
-curl                    8.9.1-r1               apk                           
+curl                    8.10.0-r0              apk                           
 dnsns                                          java-archive                  
 encodings               1.0.7-r1               apk                           
 findutils               4.9.0-r5               apk                           
@@ -51,7 +51,7 @@ libcap-utils            2.70-r0                apk
 libcap2                 2.70-r0                apk                           
 libcom_err              1.47.0-r5              apk                           
 libcrypto3              3.3.2-r0               apk                           
-libcurl                 8.9.1-r1               apk                           
+libcurl                 8.10.0-r0              apk                           
 libexpat                2.6.3-r0               apk                           
 libffi                  3.4.6-r0               apk                           
 libfontenc              1.1.8-r0               apk                           
@@ -61,8 +61,8 @@ libintl                 0.22.5-r0              apk
 libjpeg-turbo           3.0.3-r0               apk                           
 liblksctp               1.0.19-r5              apk                           
 libmd                   1.1.0-r0               apk                           
-libncursesw             6.4_p20240420-r0       apk                           
-libpng                  1.6.43-r0              apk                           
+libncursesw             6.4_p20240420-r1       apk                           
+libpng                  1.6.44-r0              apk                           
 libproc2                4.0.4-r0               apk                           
 libpsl                  0.21.5-r1              apk                           
 libssl3                 3.3.2-r0               apk                           
@@ -87,7 +87,7 @@ mkfontscale             1.2.2-r6               apk
 musl                    1.2.5-r0               apk                           
 musl-utils              1.2.5-r0               apk                           
 nashorn                 1.8.0_402-b06          java-archive                  
-ncurses-terminfo-base   6.4_p20240420-r0       apk                           
+ncurses-terminfo-base   6.4_p20240420-r1       apk                           
 netcat-openbsd          1.226-r0               apk                           
 nghttp2-libs            1.62.1-r0              apk                           
 nspr                    4.35-r4                apk                           
