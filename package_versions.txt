@@ -20,7 +20,7 @@ coreutils               9.5-r2                 apk
 coreutils-env           9.5-r2                 apk                           
 coreutils-fmt           9.5-r2                 apk                           
 coreutils-sha512sum     9.5-r2                 apk                           
-curl                    8.11.1-r0              apk                           
+curl                    8.12.0-r0              apk                           
 dnsns                   UNKNOWN                java-archive                  
 encodings               1.0.7-r1               apk                           
 findutils               4.9.0-r5               apk                           
@@ -51,8 +51,8 @@ libcap-setcap           2.70-r0                apk
 libcap-utils            2.70-r0                apk                           
 libcap2                 2.70-r0                apk                           
 libcom_err              1.47.0-r5              apk                           
-libcrypto3              3.3.2-r1               apk                           
-libcurl                 8.11.1-r0              apk                           
+libcrypto3              3.3.2-r2               apk                           
+libcurl                 8.12.0-r0              apk                           
 libexpat                2.6.4-r0               apk                           
 libffi                  3.4.6-r0               apk                           
 libfontenc              1.1.8-r0               apk                           
@@ -66,7 +66,7 @@ libncursesw             6.4_p20240420-r2       apk
 libpng                  1.6.44-r0              apk                           
 libproc2                4.0.4-r0               apk                           
 libpsl                  0.21.5-r1              apk                           
-libssl3                 3.3.2-r1               apk                           
+libssl3                 3.3.2-r2               apk                           
 libstdc++               13.2.1_git20240309-r0  apk                           
 libtasn1                4.20.0-r0              apk                           
 libunistring            1.2-r0                 apk                           
