@@ -56,7 +56,7 @@ libcurl                 8.12.1-r0              apk
 libexpat                2.6.4-r0               apk                           
 libffi                  3.4.6-r0               apk                           
 libfontenc              1.1.8-r0               apk                           
-libgcc                  13.2.1_git20240309-r0  apk                           
+libgcc                  13.2.1_git20240309-r1  apk                           
 libidn2                 2.3.7-r0               apk                           
 libintl                 0.22.5-r0              apk                           
 libjpeg-turbo           3.0.3-r0               apk                           
@@ -67,7 +67,7 @@ libpng                  1.6.44-r0              apk
 libproc2                4.0.4-r0               apk                           
 libpsl                  0.21.5-r1              apk                           
 libssl3                 3.3.3-r0               apk                           
-libstdc++               13.2.1_git20240309-r0  apk                           
+libstdc++               13.2.1_git20240309-r1  apk                           
 libtasn1                4.20.0-r0              apk                           
 libunistring            1.2-r0                 apk                           
 libverto                0.3.2-r2               apk                           
