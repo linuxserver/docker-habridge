@@ -3,7 +3,7 @@ US_export_policy        UNKNOWN                java-archive  (+1 duplicate)
 alpine-baselayout       3.6.5-r0               apk                           
 alpine-baselayout-data  3.6.5-r0               apk                           
 alpine-keys             2.4-r1                 apk                           
-alpine-release          3.20.8-r0              apk                           
+alpine-release          3.20.9-r0              apk                           
 alsa-lib                1.2.11-r0              apk                           
 apk-tools               2.14.4-r1              apk                           
 bash                    5.2.26-r0              apk                           
@@ -51,9 +51,9 @@ libcap-setcap           2.70-r0                apk
 libcap-utils            2.70-r0                apk                           
 libcap2                 2.70-r0                apk                           
 libcom_err              1.47.0-r5              apk                           
-libcrypto3              3.3.5-r0               apk                           
+libcrypto3              3.3.6-r0               apk                           
 libcurl                 8.14.1-r2              apk                           
-libexpat                2.7.3-r0               apk                           
+libexpat                2.7.4-r0               apk                           
 libffi                  3.4.6-r0               apk                           
 libfontenc              1.1.8-r0               apk                           
 libgcc                  13.2.1_git20240309-r1  apk                           
@@ -66,7 +66,7 @@ libncursesw             6.4_p20240420-r2       apk
 libpng                  1.6.54-r0              apk                           
 libproc2                4.0.4-r0               apk                           
 libpsl                  0.21.5-r1              apk                           
-libssl3                 3.3.5-r0               apk                           
+libssl3                 3.3.6-r0               apk                           
 libstdc++               13.2.1_git20240309-r1  apk                           
 libtasn1                4.21.0-r0              apk                           
 libunistring            1.2-r0                 apk                           
@@ -107,7 +107,7 @@ rt                      1.8.0_432              java-archive
 scanelf                 1.3.7-r2               apk                           
 shadow                  4.15.1-r0              apk                           
 skalibs                 2.14.1.1-r0            apk                           
-sqlite-libs             3.45.3-r2              apk                           
+sqlite-libs             3.45.3-r3              apk                           
 ssl_client              1.36.1-r31             apk                           
 sunec                   1.8.0_432              java-archive                  
 sunjce_provider         1.8.0_432              java-archive                  
