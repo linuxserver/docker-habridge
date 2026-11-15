@@ -285,6 +285,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **15.11.26:** - Rebase to Alpine 3.24.
 * **27.06.24:** - Rebase to Alpine 3.20.
 * **10.04.24:** - Revert JRE to 8 due to incomplete upstream support.
 * **20.03.24:** - Rebase to Alpine 3.19, bump JRE to 17.

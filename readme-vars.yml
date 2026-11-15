@@ -81,6 +81,7 @@ init_diagram: |
   "habridge:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "15.11.26:", desc: "Rebase to Alpine 3.24."}
   - {date: "27.06.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "10.04.24:", desc: "Revert JRE to 8 due to incomplete upstream support."}
   - {date: "20.03.24:", desc: "Rebase to Alpine 3.19, bump JRE to 17."}
